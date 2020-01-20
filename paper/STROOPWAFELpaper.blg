@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: STROOPWAFELpaper.aux
+The style file: mnras.bst
+Database file #1: my_bib.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry osti_4423221
+while executing---line 1822 of file mnras.bst
+`journal' is a missing field, not a string, for entry osti_4423221
+while executing---line 1822 of file mnras.bst
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry osti_4423221
+while executing---line 1822 of file mnras.bst
+You've used 74 entries,
+            2881 wiz_defined-function locations,
+            1345 strings with 62049 characters,
+and the built_in function-call counts, 39244 in all, are:
+= -- 3414
+> -- 2645
+< -- 226
++ -- 1173
+- -- 389
+* -- 4414
+:= -- 5918
+add.period$ -- 0
+call.type$ -- 74
+change.case$ -- 149
+chr.to.int$ -- 74
+cite$ -- 74
+duplicate$ -- 1991
+empty$ -- 1903
+format.name$ -- 641
+if$ -- 7161
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 75
+newline$ -- 241
+num.names$ -- 538
+pop$ -- 388
+preamble$ -- 2
+purify$ -- 296
+quote$ -- 0
+skip$ -- 1437
+stack$ -- 0
+substring$ -- 2472
+swap$ -- 1242
+text.length$ -- 311
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 660
+warning$ -- 0
+while$ -- 574
+width$ -- 0
+write$ -- 761
+(There were 3 error messages)
