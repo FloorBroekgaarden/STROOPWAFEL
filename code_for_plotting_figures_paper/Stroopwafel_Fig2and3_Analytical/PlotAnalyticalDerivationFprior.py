@@ -418,22 +418,22 @@ f, (axarr) = plt.subplots(1,1, figsize=(16,10))
 
 for  ind, Ntot in enumerate([1e6]):
 
-    if ind ==2:
-        print('making gain plot [Fig 3] for Ntot = ', Ntot)
-        fexpl = CalculateFractionPriorIterated(rates, Ntot)
-        NhitsMC = (rates*Ntot)
-        NhitsAIS = (rates*Ntot*fexpl + (1-fexpl)*Ntot) 
+    
+    print('making gain plot [Fig 3] for Ntot = ', Ntot)
+    fexpl = CalculateFractionPriorIterated(rates, Ntot)
+    NhitsMC = (rates*Ntot)
+    NhitsAIS = (rates*Ntot*fexpl + (1-fexpl)*Ntot) 
 
-        ratioNhits = NhitsAIS / NhitsMC
+    ratioNhits = NhitsAIS / NhitsMC
 
-        axarr.plot(rates,      ratioNhits, c='r', lw = 6, label = LABELS2[0], alpha = ALPHA[ind], zorder = 100)
-        # axarr.plot(rates, 0.33* ratioNhits, c='r', lw = 6, label = LABELS2[1], alpha = ALPHA[ind], zorder = 100, linestyle = ':')
-        NhitsAIS2 = (rates*Ntot*fexpl + (1-fexpl)*Ntot*0.1)
-        ratioNhits2 = (NhitsAIS2 / NhitsMC)
-        axarr.plot(rates, ratioNhits2, c='r', lw = 6, label = LABELS2[2], alpha = ALPHA[ind], zorder = 100, linestyle = '--')
-        # axarr.plot(rates, 0.05*ratioNhits, c='r', lw = 6, label = LABELS2[3], alpha = ALPHA[ind], zorder = 100, linestyle = '-.')
-        # axarr.plot(rates, NhitsAIS, c='r', lw = 6, label = LABELS[ind], alpha = ALPHA[ind], zorder = 100)
-        # axarr.plot(rates, NhitsMC,  c='k', lw = 6, label = LABELS[ind], alpha = ALPHA[ind], zorder = 100)
+    axarr.plot(rates,      ratioNhits, c='r', lw = 6, label = LABELS2[0], alpha = ALPHA[ind], zorder = 100)
+    # axarr.plot(rates, 0.33* ratioNhits, c='r', lw = 6, label = LABELS2[1], alpha = ALPHA[ind], zorder = 100, linestyle = ':')
+    NhitsAIS2 = (rates*Ntot*fexpl + (1-fexpl)*Ntot*0.1)
+    ratioNhits2 = (NhitsAIS2 / NhitsMC)
+    axarr.plot(rates, ratioNhits2, c='r', lw = 6, label = LABELS2[2], alpha = ALPHA[ind], zorder = 100, linestyle = '--')
+    # axarr.plot(rates, 0.05*ratioNhits, c='r', lw = 6, label = LABELS2[3], alpha = ALPHA[ind], zorder = 100, linestyle = '-.')
+    # axarr.plot(rates, NhitsAIS, c='r', lw = 6, label = LABELS[ind], alpha = ALPHA[ind], zorder = 100)
+    # axarr.plot(rates, NhitsMC,  c='k', lw = 6, label = LABELS[ind], alpha = ALPHA[ind], zorder = 100)
 
 
 
